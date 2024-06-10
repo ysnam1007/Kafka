@@ -1,0 +1,10 @@
+ sudo systemctl restart mysql 입력 시
+Job for mysql.service failed because the control process exited with error code.
+See "systemctl status mysql.service" and "journalctl -xe" for details. 오류 발생
+
+sudo apt-get remove --purge mysql*
+sudo rm -rf /etc/mysql /var/lib/mysql
+sudo apt-get autoremove
+sudo apt-get autoclean
+삭제 후 재설치 과정
+--오류 해
